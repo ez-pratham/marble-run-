@@ -170,6 +170,9 @@ With the hexagonal base complete, all components came together into the final co
 ```
 marble-run-/
 ├── README.md               # Complete project documentation and design log
+├── BOM.md                  # Detailed Bill of Materials and hardware specifications
+├── bom.csv                 # Machine-readable tabular BOM
+├── LICENSE                 # MIT Open-source license
 ├── .gitignore              # Git ignore rules for build artifacts and temp files
 │
 ├── CAD/                    # 🛠️ Editable CAD Source Files (.step, .fcstd, .skp)
@@ -228,6 +231,26 @@ marble-run-/
     ├── BILL_OF_MATERIALS.md
     └── ENGINEERING_REPORT.md
 ```
+
+---
+
+## 📋 Bill of Materials (BOM)
+
+See the full [BOM.md](BOM.md) or download the spreadsheet [bom.csv](bom.csv).
+
+| Part / Material | Type | Source File | Qty | Notes |
+|---|:---:|:---:|:---:|---|
+| **Hexagonal Foundation Base** | 3D Printed | [`stl/base1.stl`](stl/base1.stl) | 1 | Interlocking base anchoring all towers |
+| **Conical Vortex Funnel** | 3D Printed | [`stl/funnel.stl`](stl/funnel.stl) | 1 | Upper swirling infeed funnel |
+| **Funnel Cylindrical Support** | 3D Printed | [`stl/fsupport.stl`](stl/fsupport.stl) | 1 | Main vertical elevator pillar |
+| **Helical Spiral Track** | 3D Printed | [`stl/track1.stl`](stl/track1.stl) | 1 | Primary banked descending spiral track |
+| **Spiral Transition Track** | 3D Printed | [`stl/trackf.stl`](stl/trackf.stl) | 1 | Secondary spiral transition piece |
+| **Straight Track Guide** | 3D Printed | [`stl/straight1.stl`](stl/straight1.stl) | 1 | Linear bridge track |
+| **Single-Entrance Maze** | 3D Printed | [`stl/maze1.stl`](stl/maze1.stl) | 1 | Labyrinth obstacle challenge |
+| **Support Columns & Risers** | 3D Printed | [`stl/support.stl`](stl/support.stl), [`stl/supportshort.stl`](stl/supportshort.stl), [`stl/s50.stl`](stl/s50.stl) | 4–5 | Mid & short height elevation risers |
+| **Cura Build Plate Project** | Pre-sliced 3MF | [`stl/trackm.3mf`](stl/trackm.3mf) | 1 | Complete sliced multi-part Cura plate |
+| **Standard Marbles** | COTS Hardware | — | 3–5 | Ø14 mm – Ø16 mm glass or steel bearing balls |
+| **PLA / PETG Filament** | Material | — | ~350 g | Single standard 1 kg spool is plenty |
 
 ---
 
